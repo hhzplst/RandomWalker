@@ -5,9 +5,9 @@ namespace RandomWalker {
     public class RandomWalker {
         Random r = new Random();
         private List<IRandomWalkObserver> observers = new List<IRandomWalkObserver>();
-        public string Name {get; set;}
+        public string SubjectName {get; set;}
         public RandomWalker(string name) {
-            Name = name;
+            SubjectName = name;
         }
         public void AddObserver(IRandomWalkObserver obs) {
             observers.Add(obs);
