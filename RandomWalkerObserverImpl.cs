@@ -8,7 +8,7 @@ namespace RandomWalker {
       ObsName = name;
     }
     public void Moved(RandomWalker subject, string direction) {
-      Console.WriteLine("{0}: Subject {0} moved a step to the {1}", ObsName, subject.SubjectName, direction);
+      Console.WriteLine("{0}: Subject {1} moved a step to the {2}", ObsName, subject.SubjectName, direction);
     }
   }
 }
