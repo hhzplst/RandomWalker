@@ -16,8 +16,9 @@ namespace RandomWalker {
             observers.Remove(obs);
         }
         public void Move() {
+            string direction = GetDirection();
             foreach(IRandomWalkObserver obs in observers)
-                obs.Moved(this, GetDirection());
+                obs.Moved(this, direction);
         }
         public string GetDirection() {
             double d = r.NextDouble();
