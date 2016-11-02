@@ -1,7 +1,5 @@
-using System;
-
 namespace RandomWalker {
   public interface IRandomWalkObserver {
-    void Moved(Object RandomWalkEvent, string direction);
+    void Moved(RandomWalker subject, string direction);
   }
 }
