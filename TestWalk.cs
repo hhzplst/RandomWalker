@@ -14,7 +14,28 @@ namespace RandomWalker {
 
       for(int i = 0; i < 5; i++) {
         walkerTom.Move();
+        walkerJane.Move();
       }
     }
   }
 }
+
+/************************************TEST OUTPUT***************************************
+
+obsA: Subject Tom moved a step to the right
+obsB: Subject Tom moved a step to the right
+obsA: Subject Jane moved a step to the right
+obsA: Subject Tom moved a step to the right
+obsB: Subject Tom moved a step to the right
+obsA: Subject Jane moved a step to the right
+obsA: Subject Tom moved a step to the left
+obsB: Subject Tom moved a step to the left
+obsA: Subject Jane moved a step to the left
+obsA: Subject Tom moved a step to the right
+obsB: Subject Tom moved a step to the right
+obsA: Subject Jane moved a step to the right
+obsA: Subject Tom moved a step to the left
+obsB: Subject Tom moved a step to the left
+obsA: Subject Jane moved a step to the left
+
+***********************************END TEST OUTPUT************************************/
